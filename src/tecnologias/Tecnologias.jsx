@@ -1,10 +1,28 @@
-import { Grid } from "@mui/material"
+// import { Grid } from "@mui/material"
 
-const Tecnologias = () => {
+// const Tecnologias = () => {
+//     return (
+//         <Grid>
+//             Tecnologias
+//         </Grid>
+//     )
+// }
+// export default Tecnologias
+import React from 'react';
+
+function Technologies() {
+    const technologies = ['React', 'JavaScript', 'HTML', 'CSS', 'Node.js', 'Express'];
+
     return (
-        <Grid>
-            Tecnologias
-        </Grid>
-    )
+        <div>
+            <h2>Tecnologías</h2>
+            <ul>
+                {technologies.map(technology => (
+                    <li key={technology}>{technology}</li>
+                ))}
+            </ul>
+        </div>
+    );
 }
-export default Tecnologias
+
+export default Technologies;
